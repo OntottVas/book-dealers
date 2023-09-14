@@ -1,4 +1,4 @@
-package model;
+package hu.progmatic.bookdealers.model;
 
 public class Book {
 

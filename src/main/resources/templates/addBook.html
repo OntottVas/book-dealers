@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>myPages</title>
 </head>
 <body>
-$END$
+<table class="header">
+  <tr>
+    <td><a th:href="@{/home}">Home</a></td>
+    <td><a th:href="@{/about}">About</a></td>
+    <td><a th:href="@{/books}">Books</a></td>
+    <td><a th:href="@{/addBook}">AddBook</a></td>
+  </tr>
+</table>
+
+<form th:action="@{/addBook.html}" method="post">
+    <label> Title: <input placeholder="" type="text" id="bookTitle" title="bookTitle"></label>
+    <label> Title: <input placeholder="" type="text" id="author" title="author"></label>
+
+
+    <button type="submit">Submit</button>
+
+</form>
 </body>
 </html>

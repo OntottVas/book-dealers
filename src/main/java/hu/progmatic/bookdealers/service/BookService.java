@@ -1,6 +1,6 @@
-package service;
+package hu.progmatic.bookdealers.service;
 
-import model.Book;
+import hu.progmatic.bookdealers.model.Book;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -15,10 +15,12 @@ public class BookService {
         books.add(new Book("The Lord of The Rings", "J. R. R. Tolkien"));
         books.add(new Book("Egri csillagok", "Gárdonyi Géza"));
     }
-    public void getAllBooks(){
-        System.out.println(books);
+
+    public List<Book> getAllBooks() {
+        return books;
     }
-    public void addBook(String bookTitle, String author){
+
+    public void addBook(Book book){
         books.add(new Book());
     }
 
