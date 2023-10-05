@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addUser</title>
+</head>
+<body>
+<table class="header">
+  <tr>
+    <td><a th:href="@{/home}">Home</a></td>
+    <td><a th:href="@{/about}">About</a></td>
+    <td><a th:href="@{/books}">Books</a></td>
+    <td><a th:href="@{/addBook}">AddBook</a></td>
+    <td><a th:href="@{/randomBook}">RandomBook</a>
+    <td><a th:href="@{/addUser}">AddUser</a></td>
+     <td><a th:href="@{/randomUser}">RandomUser</a></td>
+      <td><a th:href="@{/users}">Users</a></td>
+  </tr>
+</table>
+<form th:action="@{/addUser}" method="post">
+  <label> Name: <input th:field="*{newUser.userName}"
+                       placeholder="" type="text" id="userName" title="userName"></label>
+  <label> Id: <input  th:field="*{newUser.id}"
+                      placeholder="" type="text" id="id" title="id"></label>
+
+
+  <button type="submit">Submit</button>
+
+</form>
+</body>
+</html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>mypages</title>
+    <title>randomUser</title>
 </head>
 <body>
 <table class="header">
@@ -15,9 +15,10 @@
         <td><a th:href="@{/addUser}">AddUser</a></td>
         <td><a th:href="@{/randomUser}">RandomUser</a></td>
         <td><a th:href="@{/users}">Users</a></td>
+
     </tr>
 </table>
-
-
+<p th:text="${randomUser.getUserName()}">Name</p>
+<p th:text="${randomUser.getId()}">Id</p>
 </body>
 </html>

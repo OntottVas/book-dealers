@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>mypages</title>
+    <title>Users</title>
 </head>
 <body>
 <table class="header">
@@ -17,7 +17,22 @@
         <td><a th:href="@{/users}">Users</a></td>
     </tr>
 </table>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Id</th>
+
+    </tr>
+    </thead>
+    <tr th:each="user : ${users}">
+
+        <td th:text="${user.getUserName()}"></td>
+        <td th:text="${user.getId()}"></td>
+
+    </tr>
 
 
+</table>
 </body>
 </html>
